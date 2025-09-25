@@ -50,7 +50,7 @@ This interactive quiz game presents users with 15 carefully curated questions sp
 2. Ensure Python is installed on your system
 3. Navigate to the project directory
 4. Run the application directly
-   `python quiz_game.py`
+-`python quiz_game.py`
 
 
 ## Usage
@@ -71,9 +71,10 @@ This interactive quiz game presents users with 15 carefully curated questions sp
 ### Main Components
 
 #### 1. Initialization and User Confirmation
+``` Python
 playing = input("Do you want to Play? ")
 positive_responses = ["yes", "y", "yeah", "yep"]
-
+```
 Handles user consent and provides flexible input acceptance.
 
 #### 2. Question Data Structure
