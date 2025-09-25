@@ -71,13 +71,14 @@ This interactive quiz game presents users with 15 carefully curated questions sp
 ### Main Components
 
 #### 1. Initialization and User Confirmation
-``` Python
+```Python
 playing = input("Do you want to Play? ")
 positive_responses = ["yes", "y", "yeah", "yep"]
 ```
 Handles user consent and provides flexible input acceptance.
 
 #### 2. Question Data Structure
+```Python
 questions = [
 {
 "question": "What does CPU stand for?",
@@ -85,9 +86,11 @@ questions = [
 },
 # ... additional questions
 ]
+```
 Organized as a list of dictionaries for maintainability and scalability.
 
 #### 3. Quiz Logic Engine
+```Python
 for q in questions:
 answer = input(q["question"] + " ")
 if answer.lower() == q["answer"]:
@@ -95,15 +98,18 @@ print("Correct! ✅")
 score += 1
 else:
 print(f"Incorrect! The answer is {q['answer']}. ❌")
+```
 Core game loop with immediate feedback and score tracking.
 
 #### 4. Performance Analytics
+```Python
 percentage = (score / total_questions) * 100
 print(f"You scored {score}/{total_questions}, which is {percentage:.2f}%.")
+```
 Comprehensive scoring with percentage calculation for performance assessment.
 
 ## Example Output
-
+```Output
 Welcome to my computer quiz!
 Do you want to Play? yes
 Let's play!
@@ -117,17 +123,23 @@ Correct! ✅
 ... [continuing through all 15 questions]
 Quiz complete! 🎉
 You scored 12/15, which is 80.00%.
+```
 
 ### Sample Performance Scenarios
 
 **Perfect Score Example:**
+```Output
 Quiz complete! 🎉
 You scored 15/15, which is 100.00%.
+```
 
 
 **Beginner Performance Example:**
+```Output
 Quiz complete! 🎉
 You scored 7/15, which is 46.67%.
+```
+
 ## Technical Details
 
 ### Architecture
@@ -155,10 +167,12 @@ You scored 7/15, which is 46.67%.
 To expand the question bank:
 
 1. Add new dictionary entries to the `questions` list:
+```
 {
 "question": "Your question here?",
 "answer": "expected answer in lowercase"
 }
+```  
 
 2. Ensure answers are in lowercase for consistent comparison
 3. Test thoroughly with various input formats
