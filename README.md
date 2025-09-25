@@ -50,8 +50,7 @@ This interactive quiz game presents users with 15 carefully curated questions sp
 2. Ensure Python is installed on your system
 3. Navigate to the project directory
 4. Run the application directly
-
-python quiz_game.py
+   `python quiz_game.py`
 
 
 ## Usage
